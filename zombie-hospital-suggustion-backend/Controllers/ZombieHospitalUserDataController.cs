@@ -11,8 +11,9 @@ namespace zombie_hospital_suggustion_backend.Controllers
     public class ZombieHospitalUserDataController
     {
         [HttpPost]
-       public ActionResult <IEnumerable<UserData>> PostUserData(UserData userData)
+       public ActionResult <PatientInfo> PostUserData(PatientInfo userData)
         {
+            
             var usr = "getfnskfn";
             return null;
         }
