@@ -11,10 +11,11 @@ namespace zombie_hospital_suggustion_backend.Controllers
     public class ZombieHospitalUserDataController
     {
         [HttpPost]
-       public ActionResult <PatientInfo> PostUserData(PatientInfo userData)
+       public ActionResult <PatientInfo> PostUserData(PatientInfo patientInfo)
         {
             
-            var usr = "getfnskfn";
+            UserData userData = patientInfo.patientInfo;
+            SqliteDataAccess.InsertUserData(userData);
             return null;
         }
 
